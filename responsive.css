@@ -1,0 +1,242 @@
+/* Mobile & tablet: width < 1024px */
+
+@media only screen and (max-width: 1024px) {
+    .header {
+        display: none;
+    }
+    
+    .navbar {
+        justify-content: center;
+        width: 100%;
+    }
+
+    ul.navbar-menu {
+        display: none;
+    }
+    
+    .nav-search__btn {
+        position: absolute;
+        left: 5px;
+    }
+
+    .nav-search-form {
+        left: 0;
+        width: 84%;
+    }
+    
+    .nav-search-input {
+        font-size: 18px;
+    }
+
+    .nav__bars-btn {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav__bars-btn:before {
+        content: "";
+        width: 24px;
+        height: 2px;
+        display: block;
+        background-color: #343a40;
+        box-shadow: 0 8px 0 0 #343a40, 0 16px 0 0 #343a40;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    input#nav-mobile-input:checked~.nav-mobile {
+        transform: translateX(0);
+        transition: transform 0.2s linear;
+    }
+
+    .nav-mobile {
+        display: block;
+        transform: translateX(-100%);
+    }
+
+    .nav-mobile--head {
+        display: block;
+        width: 100%;
+        height: 30px;
+        background-color: #fff;
+    }
+
+    .banner {
+        margin-top: 70px;
+    }
+
+    .slide-show {
+        height: 400px;
+    }
+
+    .under-slide-show {
+        display: block;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .under-slide-show--item {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 18px;
+    }
+
+    .sub-product-service {
+        display: block;
+    }
+
+    .sub-product-service .sub-product {
+        width: 100%;
+        height: 490px;
+    }
+
+    .sub-product-right {
+        margin: 0;
+    }
+
+    .news-title {
+        top: 50%;
+        font-size: 20px;
+    }
+
+    .footer-head {
+        display: none;
+    }
+
+    .footer-body {
+        flex-direction: column-reverse;
+    }
+    .license-info {
+        display: block;
+        width: 100%;
+        border-top: 1px solid #E2E2E2;
+    }
+
+    .footer-links {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer-list-link, .footer-list-link:last-child {
+        display: block;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .footer-list-link ul {
+        display: none;
+    }
+
+    input[name="check-footer-inp"]:checked~ul {
+        display: block;
+    }
+
+    p.list-link-title {
+        color: var(--text-color);
+        position: relative;
+    }
+
+    p.list-link-title::after {
+        content: "";
+        display: block;
+        width: 7px;
+        height: 7px;
+        border: 2px solid;
+        border-color: #757884 #757884 transparent transparent ;
+        transform: rotate(45deg);
+        border-radius: 3px 0;
+        position: absolute;
+        right: 0px;
+        top: 50%;
+    }
+    .footer-list-link>ul>li>a {
+        color: #5b5b5c;
+    }
+
+    .footer-products {
+        display: none;
+    }
+
+    .footer-social-network-mobile {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    
+    .contact-links {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Mobile: width < 740px */
+
+@media only screen and (max-width: 740px) {
+    .slide-show {
+        height: 250px;
+    }
+
+    a.slide-show-direction.prev {
+        left: 30px;
+    }
+
+    a.slide-show-direction.next {
+        right: 30px;
+    }
+
+    .list-slide {
+        left: 0;
+    }
+
+    .under-slide-show--item {
+        font-size: 22px;
+    }
+
+    .main-product-service {
+        height: 450px;
+    }
+
+    .service-slogan {
+        font-size: 25px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .news-promotion-container .news-direction {
+        width: 140px;
+        padding: 6px;
+        margin: 5px;
+    }
+
+    .main-news,
+    .sub-news {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .main-news-item,
+    .sub-news-item {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+        height: 230px;
+    }
+
+    p.list-link-title {
+        font-size: 16px;
+    }
+
+    p.list-link-title::after {
+        top: 34%;
+    }
+
+}

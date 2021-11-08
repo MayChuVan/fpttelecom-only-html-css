@@ -1,0 +1,42 @@
+:root {
+    --text-color: #1F2636;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('./fonts/SVN-Gilroy\ Medium.otf');
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy-Bold';
+    src: url('./fonts/SVN-Gilroy\ Bold.otf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 16px/26px 'SVN-Gilroy', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.row {
+    display: flex;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
